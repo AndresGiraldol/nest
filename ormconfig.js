@@ -30,7 +30,7 @@ switch (process.env.NODE_ENV) {
       username: process.env.DB_USER,
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
-      entities: ['**/*.entity.ts'],
+      entities: ['**/*.entity.{ts,js}'],
       migrationsRun: true,
       ssl: {
         rejectUnauthorized: false
